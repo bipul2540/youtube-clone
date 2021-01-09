@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+.navbar2-container {
+  position: fixed;
+  top: 8vh;
+  left: 90px;
+  width: 100%;
+  height: 70px;
+  background-color: #343434;
+  border-top: 1px solid rgb(98, 97, 97);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 668px) {
+  .navbar2-container {
+    left: 0;
+  }
+}
+
+.navbar2-active {
+  left: 226px;
+}
+@media screen and (max-width: 668px) {
+  .navbar2-active {
+    left: 0;
+  }
+}
+
+.nav2-items {
+  overflow-x: scroll;
+  display: flex;
+  list-style: none;
+  white-space: nowrap;
+  padding: 8px 6px;
+}
+
+.nav2-items::-webkit-scrollbar {
+  display: none;
+}
+
+.nav2-items li {
+  margin: 10px 7px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid rgb(113, 112, 112);
+}
+
+.nav2-items li:hover {
+  background-color: rgb(88, 87, 87);
+}
+
+.nav2-items li:first-child {
+  background-color: rgb(204, 202, 202);
+}
+.nav2-items li:first-child a {
+  color: black;
+}
+
+.nav2-items li a {
+  text-decoration: none;
+  color: white;
+}
+/*
+.navbar2-container {
+  position: fixed;
+  width: 500%;
+  height: 70px;
+  top: 8vh;
+  left: 90px;
+  background-color: #343434;
+  border-top: 1px solid grey;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", Arial, sans-serif;
+  letter-spacing: 1px;
+  transition: all ease 0s;
+  overflow-x: scroll;
+}
+
+.navbar2-active {
+  left: 230px;
+}
+
+@media screen and (max-width: 668px) {
+  .navbar2-container {
+    left: 0;
+    width: 600%;
+  }
+  .navbar2-active {
+    left: 220px;
+  }
+}
+
+.nav2-items {
+  width: 100%;
+  list-style: none;
+  left: 6%;
+}
+.nav2-items li {
+  display: inline;
+  height: 20px;
+ 
+}
+
+.navbar2-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.navbar2-container::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.navbar2-container::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb;
+  border-radius: 10px;
+}
+
+.nav2-items li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  padding: 6px 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-transform: capitalize;
+  border: 0.5px solid rgb(189, 185, 185);
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+.nav2-items li a:hover {
+  background-color: rgb(88, 87, 87);
+}
+
+*/
+
+@media screen and (max-width: 400px) {
+  .navbar2-container {
+    font-size: 12px;
+    height: 35px;
+  }
+
+  .nav2-items li a {
+    padding: 3px 6px;
+    margin: 0 5px;
+    border-radius: 10px;
+  }
+  .navbar2-active {
+    left: 140px;
+  }
+}
